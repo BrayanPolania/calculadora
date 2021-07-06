@@ -1,0 +1,57 @@
+/*@import url('https://font');
+font-family: 'Barlow Semi Condensed';*/
+:root {
+  --bgColor: #dedcd3;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-size: 1.24vw;
+
+  background: var(--bgColor) url(https://);
+  background-size: cover;
+
+  min-height: 100vh;
+  width: 100%;
+}
+/* Scroll Personalizado */
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background: #ffb22a;
+    border-radius: 10px;
+  }
+  body::-webkit-scrollbar {
+    border-radius: 0;
+  }
+  *::-webkit-scrollbar-thumb {
+    /* background: rgba(255,255,255, .3); */
+    border: 1px solid #000;
+    border-radius: 10px;
+  }
+/* Scroll Personalizado */
+
+
+
+
+
+
+/*-----------------------MOBILE---------------------------*/
+@media (max-width: 780px) {
+  body {
+    font-size: 1.7vh;
+  }
+}
+@media (max-width: 430px) {
+
+
+
+}
+
+/*
+TODO: 
+FIXME: 
+*/
