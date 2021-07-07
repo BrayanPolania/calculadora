@@ -17,7 +17,7 @@ body{
   min-height: 100vh;
   width: 100%;
 }
-/* Scroll Personalizado */
+/* Scroll Personalizado
   *::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -28,14 +28,133 @@ body{
     border-radius: 0;
   }
   *::-webkit-scrollbar-thumb {
-    /* background: rgba(255,255,255, .3); */
+    background: rgba(255,255,255, .3);
     border: 1px solid #000;
     border-radius: 10px;
   }
-/* Scroll Personalizado */
+Scroll Personalizado
+*/
+#calculadora {
+  width: 18.75rem;
+  height: 24.9375rem;
+  max-width: 300px;
+  max-height: 399px;
+  background-color: red;
+  margin: 0.3125rem auto;
+  
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "display"
+                       "btns"
+                       "btns"
+                       "btns";
+}
+#display {
+  grid-area: display;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "numPrevious"
+                       "numCurrent"
+                       "numCurrent";
+  
+  color: white;
+  background-color: cyan;
+}
+#numPrevious {
+  grid-area: numPrevious;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 1.5rem;
+  padding-right: 1rem;
+  overflow: auto;
+}
+#numCurrent {
+  grid-area: numCurrent;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 2.5rem;
+  padding-right: 0.625rem;
+  overflow: auto;
+}
+#btns {
+  grid-area: btns;
+  display: grid;
+  gap: 0.3125rem;
+  padding: 0.3125rem;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "clear multiply divide subtract"
+                       "num7 num8 num9 subtract"
+                       "num4 num5 num6 add"
+                       "num1 num2 num3 add"
+                       "num0 dot equal equal";
 
-
-
+  background-color: plum;
+}
+#btns/*disable-selection*/ {
+  -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer */
+-khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+-webkit-user-select: none; /* Chrome, Safari, and Opera */
+-webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
+#num0 {
+  grid-area: num0;
+}
+#num1 {
+  grid-area: num1;
+}
+#num2 {
+  grid-area: num2;
+}
+#num3 {
+  grid-area: num3;
+}
+#num4 {
+  grid-area: num4;
+}
+#num5 {
+  grid-area: num5;
+}
+#num6 {
+  grid-area: num6;
+}
+#num7 {
+  grid-area: num7;
+}
+#num8 {
+  grid-area: num8;
+}
+#num9 {
+  grid-area: num9;
+}
+#dot {
+  grid-area: dot;
+}
+#clear {
+  grid-area: clear;
+}
+#multiply {
+  grid-area: multiply;
+}
+#divide {
+  grid-area: divide;
+}
+#subtract {
+  grid-area: subtract;
+}
+#add {
+  grid-area: add;
+}
+#equal {
+  grid-area: equal;
+}
 
 
 
