@@ -75,11 +75,8 @@ function operation(e) {
       numCurrent.innerHTML = "";
       num1 = result;
       num2 = undefined;
-
+      operationA = value;
     }
-
-
-
 
     return;
   }
